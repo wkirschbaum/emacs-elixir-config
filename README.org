@@ -1,15 +1,13 @@
-# Emacs Elixir Config
+* Emacs Elixir Config
 
-## Installation
+** Installation
 
-### Emacs
-
-#### macOS
+*** macOS
 
 - brew install tree-sitter
 - brew install emacs
 
-### Configuration
+*** Configuration
 
 - backup and remove the file ~/.emacs if it exists
 - backup and remove the folder ~/.config/emacs if it exists  
