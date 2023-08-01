@@ -13,3 +13,17 @@
 - backup and remove the folder ~/.config/emacs if it exists  
 - git clone https://github.com/wkirschbaum/emacs-elixir-config ~/.config/emacs
 - start emacs and follow the prompts
+
+*** Installing lsp servers
+
+Once you are in emacs, you can install the credo-language-server and
+the next language server by running the following commands:
+
+- M-x lsp-install-server
+- select `nextls' and/or `credo-langauge-server'
+
+If you have not yet installed the elixir tree-sitter grammar you can
+also run:
+
+- M-x treesit-install-language-grammar
+- select `elixir'.
