@@ -1,10 +1,10 @@
 ;;; init.el --- Init file for a basic Elixir environment -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2022, 2023 Wilhelm H Kirschbaum
+;; Copyright (C) 2023 Wilhelm H Kirschbaum
 
 ;; Author           : Wilhelm H Kirschbaum
 ;; Version          : 1.2
-;; URL              : https://github.com/wkirschbaum/elixir-ts-mode
+;; URL              : https://github.com/wkirschbaum/emacs-elixir-config
 ;; Package-Requires : ((emacs "29.1") (elixir-ts-mode "1.2"))
 ;; Created          : August 2023
 ;; Keywords         : elixir
