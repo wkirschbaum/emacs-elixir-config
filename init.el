@@ -54,11 +54,18 @@
 (defvar global-treesit-auto-modes)
 (defvar treesit-auto-install)
 (declare-function global-treesit-auto-mode "")
+(declare-function global-flycheck-mode "")
 
 ;; Don't show byte compile warnings
 ;; because they are mostly uninteresting unless working
 ;; on Emacs or a package.
 (setq byte-compile-warnings nil)
+
+;; Ensure we have some feedback for lsp-mode.
+(use-package flycheck
+  :ensure t
+  :config
+  (global-flycheck-mode))
 
 ;; Elixir editing mode
 (use-package elixir-ts-mode
@@ -84,6 +91,8 @@
   (custom-set-variables '(lsp-imenu-index-symbol-kinds
                           '(Module Class Constructor Function))))
 
+;; Patching lsp-mode to work with next-ls
+(load (concat user-emacs-directory "nextls" ".el"))
 
 (provide 'init)
 ;;; init.el ends here
