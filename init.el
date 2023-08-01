@@ -89,7 +89,8 @@
   (setq lsp-keymap-prefix "C-c l")
   (custom-set-variables '(lsp-imenu-sort-methods '(position kind)))
   (custom-set-variables '(lsp-imenu-index-symbol-kinds
-                          '(Module Class Constructor Function))))
+                          '(Module Class Constructor Function)))
+  (customize-set-variable 'lsp-credo-version "0.3.0"))
 
 ;; Patching lsp-mode to work with next-ls
 (load (concat user-emacs-directory "nextls" ".el"))
